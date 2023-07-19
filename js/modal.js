@@ -1,3 +1,7 @@
+"use strict"
+
+
+
 // (() => {
 //     const refs = {
 //       openModalBtn: document.querySelector("[data-modal-open]"),
@@ -155,5 +159,171 @@
 //   console.log(sum)
 //   console.log(i)
 // } 
+
+// const apartment = {
+//     descr: "Spacious apartment in the city center",
+//     rating: 4,
+//     price: 2153,
+//   };
+//   const keys = [];
+//   const values = [];
+//   // Change code below this line
+  
+//   for(const key in apartment){
+//     console.log(keys.push(key))
+//     console.log(values.push(apartment[key]))
+//   }
+
+// function countProps(object) {
+//     let propCount = 0;
+//     const keys = Object.keys(countProps);
+//     for (const key of keys){
+//         if(keys.hasOwnProperty(key)){
+//         propCount += 1;
+//         } 
+        
+//     }
+    
+//     return propCount;
+// }
+// countProps()
+// console.log(countProps({name: "Mango", age: 2}))
+
+
+    
+// function countTotalSalary(salaries) {
+//     let totalSalary = 0;
+//     // Change code below this line
+   
+//       for (const value of Object.values(salaries)){
+      
+//           totalSalary += value;
+      
+//       }
+//     // Change code above this line
+//     return totalSalary;
+//   }
+// countTotalSalary(); 
+// console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }) );
+
+
+// const book = {
+//     kiwi: 200,
+//     poly: 50,
+//     ajax: 150
+//   };
+//   const keys = Object.keys(book);
+//   console.log(keys);
+  
+//   const values = Object.values(book);
+//   console.log(values);
+
+
+// *****14.07-------------------------------
+// Task-1---------------------------------------------
+// Напишіть функцію min(a,b), яка повертає менше чисел a і b.
+
+// function min(a,b){
+//     // if(a < b){
+//     //     return a;
+//     // }else{
+//     //     return b;
+//     // }
+//     return (a < b) ? a : b
+// }
+
+// min()
+// console.log(min(35,20))
+
+
+// Task-2------------------------------------------------------- 
+//Напишіть функцію logItems(array), яка приймає
+//масив та використовує цикл for, який для кожного
+//елемента масиву виводитиме повідомлення у форматі
+//<номер елемента> - <значення елемента>
+//Нумерація елементів має починатися з першого.
+
+// const arr = ['Джаз', 'Блюз', 'Рок-н-рол', 'Реггі', 'Реп'];
+
+// function logItems(array){
+//    for (let i = 0; i < array.length; i += 1){
+//         console.log(`${i +1} - ${array[i]}`)
+//    }
+// }
+
+// logItems(arr)
+
+
+// Task-3-----------------------------------------------------------
+//Напиши функцію findSmallerNumber(numbers)
+//яка шукає найменше число в масиві.
+//Додай перевірку що функція отримує масив
+// const number = [2, 5, 35, 56, 12, 24, 7, 80, 3];
+
+
+// function findSmallerNumber(numbers){
+//     let smallerNumber = numbers[0];
+//     for(let num of numbers){
+//         if(smallerNumber > num){
+//             smallerNumber = num;
+//         }
+       
+//     }
+//     return smallerNumber;
+// }
+// findSmallerNumber(number);
+// console.log(findSmallerNumber(number));
+
+
+// Task-4---------------------------------------------------
+//Напишіть функцію caclculateAverage()
+//яка приймає довільну кількість
+//аргументів і повертає їхнє середнє значення.
+//Додати перевірку, що аргументи це числа.
+
+
+// const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+  
+// function getAllPropValues(propName) {
+//     const arr = [];
+
+//     for (let product of products){
+//             if(product.hasOwnProperty(propName)){
+//             arr.push(product[propName]);
+//         }
+//     }
+//     return arr;
+  
+
+// }
+
+// getAllPropValues();
+// console.log(getAllPropValues(name));
+  
+
+const bookShelf = {
+    books: ["The last kingdom", "Haze", "The guardian of dreams"],
+    updateBook(oldName, newName) {
+    
+    
+      const book = this.books.indexOf(oldName);
+   
+      return this.books.splice(book, 1, newName);
+  
+  
+    },
+  };
+
+  bookShelf.updateBook('The last kingdom', 'Dune');
+// console.log(bookShelf.books);
+
+
+
+
 
 
