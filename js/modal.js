@@ -1,6 +1,4 @@
-"use strict"
-
-
+'use strict';
 
 // (() => {
 //     const refs = {
@@ -16,8 +14,6 @@
 //       refs.modal.classList.toggle("is-hidden");
 //     }
 //   })();
-
-
 
 // Task 1________________
 
@@ -55,7 +51,6 @@
 //     result = 'введіть значення від 1-4';
 // }
 
-
 // Task 3__________________________
 //Використовуючи конструкцію if...else,
 //напишіть код, який запитуватиме:
@@ -64,10 +59,8 @@
 // показати через alert: "Вірно!"
 //інакше відобразити: "Не знаєте? ECMAScript!"
 
-
 // const questionUser = prompt('Яка офіційна назва JavaScript?');
 // console.log(questionUser);
-
 
 // if (questionUser === "ECMAScript") {
 //   alert ('Вірно!');
@@ -92,21 +85,14 @@
 //то вивести рядок "Добрий день!"
 //інакше виводити рядок "Невірний пароль!"
 
-
 // const userLogin = prompt(Wedu login:);
 // console.log(userLogin);
-
-
 
 // Task 5___________________
 // Напишіть програму, яка отримає від користувача
 //число (кількість хвилин) і виведе у консоль
 //рядок у форматі годин і хвилин
 //70 === 01:10
-
-
-
-
 
 // Task 6______________________________
 
@@ -128,7 +114,6 @@
 //     alert( 'We hope that this page looks ok!' );
 // }
 
-
 // const browser = 'Edge';
 
 // if (browser === 'Edge') {
@@ -140,11 +125,9 @@
 //   alert( 'We hope that this page looks ok!' )
 // }
 
-
-
 // Task 7________________________________
 
- //Напишіть цикл, який виводить у консоль
+//Напишіть цикл, який виводить у консоль
 // числа від max до min за спаданням
 // Додайте усі парні числа від min до max
 
@@ -158,7 +141,7 @@
 //   }
 //   console.log(sum)
 //   console.log(i)
-// } 
+// }
 
 // const apartment = {
 //     descr: "Spacious apartment in the city center",
@@ -168,7 +151,7 @@
 //   const keys = [];
 //   const values = [];
 //   // Change code below this line
-  
+
 //   for(const key in apartment){
 //     console.log(keys.push(key))
 //     console.log(values.push(apartment[key]))
@@ -180,32 +163,29 @@
 //     for (const key of keys){
 //         if(keys.hasOwnProperty(key)){
 //         propCount += 1;
-//         } 
-        
+//         }
+
 //     }
-    
+
 //     return propCount;
 // }
 // countProps()
 // console.log(countProps({name: "Mango", age: 2}))
 
-
-    
 // function countTotalSalary(salaries) {
 //     let totalSalary = 0;
 //     // Change code below this line
-   
+
 //       for (const value of Object.values(salaries)){
-      
+
 //           totalSalary += value;
-      
+
 //       }
 //     // Change code above this line
 //     return totalSalary;
 //   }
-// countTotalSalary(); 
+// countTotalSalary();
 // console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }) );
-
 
 // const book = {
 //     kiwi: 200,
@@ -214,10 +194,9 @@
 //   };
 //   const keys = Object.keys(book);
 //   console.log(keys);
-  
+
 //   const values = Object.values(book);
 //   console.log(values);
-
 
 // *****14.07-------------------------------
 // Task-1---------------------------------------------
@@ -235,8 +214,7 @@
 // min()
 // console.log(min(35,20))
 
-
-// Task-2------------------------------------------------------- 
+// Task-2-------------------------------------------------------
 //Напишіть функцію logItems(array), яка приймає
 //масив та використовує цикл for, який для кожного
 //елемента масиву виводитиме повідомлення у форматі
@@ -253,13 +231,11 @@
 
 // logItems(arr)
 
-
 // Task-3-----------------------------------------------------------
 //Напиши функцію findSmallerNumber(numbers)
 //яка шукає найменше число в масиві.
 //Додай перевірку що функція отримує масив
 // const number = [2, 5, 35, 56, 12, 24, 7, 80, 3];
-
 
 // function findSmallerNumber(numbers){
 //     let smallerNumber = numbers[0];
@@ -267,13 +243,12 @@
 //         if(smallerNumber > num){
 //             smallerNumber = num;
 //         }
-       
+
 //     }
 //     return smallerNumber;
 // }
 // findSmallerNumber(number);
 // console.log(findSmallerNumber(number));
-
 
 // Task-4---------------------------------------------------
 //Напишіть функцію caclculateAverage()
@@ -281,14 +256,13 @@
 //аргументів і повертає їхнє середнє значення.
 //Додати перевірку, що аргументи це числа.
 
-
 // const products = [
 //     { name: "Radar", price: 1300, quantity: 4 },
 //     { name: "Scanner", price: 2700, quantity: 3 },
 //     { name: "Droid", price: 400, quantity: 7 },
 //     { name: "Grip", price: 1200, quantity: 9 },
 //   ];
-  
+
 // function getAllPropValues(propName) {
 //     const arr = [];
 
@@ -298,34 +272,29 @@
 //         }
 //     }
 //     return arr;
-  
 
 // }
 
 // getAllPropValues();
 // console.log(getAllPropValues(name));
-  
 
 // const bookShelf = {
 //     books: ["The last kingdom", "Haze", "The guardian of dreams"],
 //     updateBook(oldName, newName) {
-    
-    
+
 //       const book = this.books.indexOf(oldName);
-   
+
 //       return this.books.splice(book, 1, newName);
-  
-  
+
 //     },
 //   };
 
 //   bookShelf.updateBook('The last kingdom', 'Dune');
 // console.log(bookShelf.books);
 
-
 // function filterArray(numbers, value) {
 //   const filteredNumbers = [];
-  
+
 //   numbers.forEach(function(number){
 //     if (number > value){
 //     filteredNumbers.push(number);
@@ -338,19 +307,16 @@
 // console.log(filterArray([1, 2, 3, 4, 5], 2));
 
 // function changeEven (numbers, value) {
-  
+
 //   const newEven = [];
-  
+
 //   numbers.forEach(number => {
 //     newEven.push(number + value);
 //   });
 
- 
 // };
 
-
 // changeEven([1, 2, 3, 4, 5], 10);
-
 
 // function pureMultiply (array, value) {
 //   const newArray = [];
@@ -435,16 +401,12 @@
 // ];
 
 // const getSortedFriends = users => {
-//   return [...users].flatMap((user) => user.friends).filter((friend,index,arr)=> 
+//   return [...users].flatMap((user) => user.friends).filter((friend,index,arr)=>
 //     arr.indexOf(friend)===index).sort((a,b)=>
 //     a.friends.localeCompare(b.friends));
 // };
 
 // getSortedFriends();
-
-
-
-
 
 //* -------28.07------------
 // *--------Task-1------------
@@ -465,18 +427,11 @@
 //   callback(userName);
 // };
 
-
-
 // const greet = name => {console.log(`Привіт ${name}`)};
-
-
 
 // letMeSeeYourName(greet);
 
-
 // --------Task-2------------
-
-
 
 //Напишіть дві функції
 //makeProduct(name, price, callback) - приймає
@@ -486,7 +441,6 @@
 //Передаючи йому створений об'єкт.
 //showProduct(product) - коллбек приймаючий об'єкт
 //продукту і логірующий їх у консоль
-
 
 // const makeProduct = (name, price, callback) => {
 //   const product = {
@@ -502,12 +456,8 @@
 //   console.log(product);
 // };
 
-
 // makeProduct('Iphone', 15500, showProduct);
 // makeProduct('HP', 500, showProduct);
-
-
-
 
 // ---------Task-3--------------------
 
@@ -519,9 +469,6 @@
 // const makeDish = function (shefName, dish) {
 // console.log(`${shefName} is cooking ${dish}`);
 // };
-
-
-
 
 // ----------------------Task-4----------------
 
@@ -608,7 +555,7 @@
 //   },
 // ];
 // const getAvailableModels = cars =>
-  // cars.reduce((models, car) => [...models, car.model], []);
+// cars.reduce((models, car) => [...models, car.model], []);
 
 //   cars.reduce((models, car) => {
 //     models.push(car.model);
@@ -617,7 +564,7 @@
 
 // console.log(getAvailableModels(vehicles));
 
-// -------Tasf-5-----------------------
+// -------Task-5-----------------------
 
 // const vehicles = [
 //   {
@@ -704,3 +651,62 @@
 
 // const getAvailableModels = (cars, amountThreshold) => cars.filter(car => car.amount >= amountThreshold).map(car => car.model);
 // console.log(getAvailableModels(vehicles, 10))
+
+// ------------------11.08---------------------------
+// ------------------Task-1------------------------
+
+// Натискання на кнопку "SHOW ME" має виводити значення з поля введення (дивіться на елементи в html-розмітці)
+// const refs = {
+//   textInput: document.querySelector('.text-input'),
+//   showMeButton: document.querySelector('.show-me-button'),
+//   output: document.querySelector('.output')
+// }
+
+// refs.showMeButton.addEventListener('click', onShowMeButtonClick);
+
+// function onShowMeButtonClick (){
+//   refs.output.textContent = refs.textInput.value;
+// }
+
+// -----------------Task-2-------------------
+// Після натискання кнопки "SWAP ME" здійснюється обмін вмістом між двома інпутами.
+// Ви можете натиснути на неї кілька разів або вручну змінити вміст інпутів.
+
+// const refs = {
+//   swapButton: document.querySelector('#swapButton'),
+//   leftSwapInput: document.querySelector('#leftSwapInput'),
+//   rightSwapInput: document.querySelector('#rightSwapInput'),
+// };
+
+// refs.swapButton.addEventListener('click', onSwapButtonClick);
+
+// function onSwapButtonClick() {
+//   const leftSwapInput = refs.leftSwapInput.value;
+//   const rightSwapInput = refs.rightSwapInput.value;
+
+//   refs.leftSwapInput.value = rightSwapInput;
+//   refs.rightSwapInput.value = leftSwapInput;
+// }
+
+//----------------------Task-3----------------------
+// Кнопка "Приховати" ховає текст і замінює назву кнопки на
+// "Розкрити", при повторному натисканні текст знову стає доступним
+// і кнопка набуває початкового вигляду.
+const refs = {
+  swapButton: document.querySelector('#swapButton'),
+  taskTitle: document.querySelector('.taskTitle'),
+};
+
+refs.swapButton.addEventListener('click', onSwapButtonClick);
+
+function onSwapButtonClick() {
+  if(){ refs.taskTitle.style.display = 'block';
+    refs.swapButton.textContent = 'Розкрити';
+  }
+}
+
+
+
+// ------------------Task-4-------------
+// Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" - 
+// більше на 10 пікселів.
