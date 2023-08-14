@@ -692,21 +692,29 @@
 // Кнопка "Приховати" ховає текст і замінює назву кнопки на
 // "Розкрити", при повторному натисканні текст знову стає доступним
 // і кнопка набуває початкового вигляду.
-const refs = {
-  swapButton: document.querySelector('#swapButton'),
-  taskTitle: document.querySelector('.taskTitle'),
-};
+// const refs = {
+//   swapButton: document.querySelector('#swapButton'),
+//   taskTitle: document.querySelector('.taskTitle'),
+// };
 
-refs.swapButton.addEventListener('click', onSwapButtonClick);
+// refs.swapButton.addEventListener('click', onSwapButtonClick);
 
-function onSwapButtonClick() {
-  if(){ refs.taskTitle.style.display = 'block';
-    refs.swapButton.textContent = 'Розкрити';
-  }
-}
+// function onSwapButtonClick() {
+//   if(){ refs.taskTitle.style.display = 'block';
+//     refs.swapButton.textContent = 'Розкрити';
+//   }
+// }
 
 
 
 // ------------------Task-4-------------
-// Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" - 
+// Кнопка "Зменшити" робить квадрат менше на 10 пікселів, допопка "Збільшити" -
 // більше на 10 пікселів.
+
+
+const parent = document.querySelector("#parent");
+
+parent.addEventListener("click", (event) => {
+  console.log("event.target: ", event.target);
+  console.log("event.currentTarget: ", event.currentTarget);
+});
